@@ -86,7 +86,7 @@ section {
 }
 
 ul.navigation {
-  background-color: #bb2f81;
+  background-color: #12a1df;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,14 +96,14 @@ ul.navigation {
   width: 100%;
 }
 ul.navigation li a {
-  background-color: #bb2f81;
-  color: rgb(255, 206, 225);
+  background-color: #6072ff;
+  color: rgb(255, 255, 255);
   display: block;
   padding: 10px;
   text-align: center;
 }
 ul.navigation li a:hover, ul.navigation li a:focus {
-  background-color: rgb(237, 20, 118);
+  background-color: rgb(49, 162, 254);
   color: white;
 }
 
