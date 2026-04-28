@@ -9,8 +9,9 @@ box-sizing: border-box;
     box-sizing: inherit;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0px;
+    background-color:rgb(15, 30, 128)s
     }
 
 h1, h2, h3 {
@@ -23,8 +24,8 @@ a {
 }
 
 a:hover {
-  background-color: blue;
-  color: blue;
+  background-color: rgb(116, 116, 246);
+  color: rgb(189, 189, 225);
 }
 
 section {
@@ -33,13 +34,18 @@ section {
   padding-bottom: 0px;
 }
 
+h1{
+  position: center;
+}
+
+
 
 .header {
   padding: 0px;
   color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: row;
-  background-color: blue;
+  display: justify-content;
+  flex-direction: center;
+  background-color: rgb(15, 30, 128);
   color: black;
 }
 
@@ -91,7 +97,7 @@ section {
 }
 
 ul.navigation {
-  background-color: #12a1df;
+  background-color: #6072ff;;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -111,7 +117,7 @@ ul.navigation {
       
       &:hover,
       &:focus {
-        background-color: rgb(49, 162, 254);
+        background-color: rgb(15, 30, 128);
         color: white;
       }
     }
