@@ -5,10 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "editor-browser",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "url": "file:///Users/carlyhemmings/Desktop/Untitled/index.html"
+            "type": "chrome",
+            "url": "http://index.html",
+            "webRoot": "${workspaceFolder}"
         }
+        
+
+        
     ]
 }
