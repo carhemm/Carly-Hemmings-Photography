@@ -11,11 +11,14 @@ box-sizing: border-box;
 body{
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
-    background-color:rgb(15, 30, 128)s
+    background-color:rgb(15, 30, 128)
+    background-image url(../img/CRH.jpg);
+    background-size: cover;
     }
 
 h1, h2, h3 {
   color: white;
+  position: center;
 }
 
 a {
@@ -34,8 +37,23 @@ section {
   padding-bottom: 0px;
 }
 
-h1{
-  position: center;
+h1, h2, h3 {
+  color: rgb(255, 255, 255);
+ text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0px;
+  color: rgb(237, 20, 118);
+}
+section {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
@@ -48,6 +66,30 @@ h1{
   background-color: rgb(15, 30, 128);
   color: black;
 }
+
+.item-sub {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  display: row;
+  align-items: left;
+  align-content: left;}
+
+
+
+section {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0px;
+  color: rgb(237, 20, 118);
+}
+
 
 .header-p {
   background-color: rgb(237, 20, 118);
@@ -154,6 +196,16 @@ ul.buttons{
     background-color: var(--primary-color);
     color: var(--off-white);
   }
+
+   .item {
+    background: #e52f96;
+    color: rgb(193, 24, 114);
+    padding: 10px;
+    flex-basis: 92%;
+    max-width: 440px;
+    margin: 5px;
+  }
+  
 
   h1, h2, h3 {
     color: var(--white);
