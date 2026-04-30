@@ -11,7 +11,8 @@ html {
 body {
   font-family: "Times New Roman", Times, serif;
   margin: 0px;
-  background-color: rgb(15, 30, 128) background-image url(../img/CRH.jpg);
+  background-color: rgb(15, 30, 128);
+  background-image: url("../img/CRH.jpg");
   background-size: cover;
 }
 
@@ -173,15 +174,14 @@ ul.buttons li a:hover, ul.buttons li a:focus {
   background-color: rgb(183, 45, 109);
   color: white;
 }
-ul.buttons {
-  /* Styles for screens above or equal to 600px wide */
-}
+
+/* Styles for screens above or equal to 600px wide */
 @media (width >= 600px) {
-  ul.buttons body {
+  body {
     background-color: var(--primary-color);
     color: var(--off-white);
   }
-  ul.buttons .item {
+  .item {
     background: #e52f96;
     color: rgb(193, 24, 114);
     padding: 10px;
@@ -189,19 +189,19 @@ ul.buttons {
     max-width: 440px;
     margin: 5px;
   }
-  ul.buttons h1, ul.buttons h2, ul.buttons h3 {
+  h1, h2, h3 {
     color: var(--white);
   }
-  ul.buttons html {
+  html {
     box-sizing: border-box;
   }
-  ul.buttons *, ul.buttons *:before, ul.buttons *:after {
+  *, *:before, *:after {
     box-sizing: inherit;
   }
-  ul.buttons body {
+  body {
     margin: 0;
   }
-  ul.buttons section {
+  section {
     background-color: pink;
     display: flex;
     flex-wrap: wrap;
@@ -210,20 +210,20 @@ ul.buttons {
     justify-content: center;
   }
 }
-@media (width >= 600px) and (width > 670px) {
-  ul.buttons h1 {
+@media (width > 670px) {
+  h1 {
     font-size: clamp(36px, 5vw, 60px);
   }
-  ul.buttons p {
+  p {
     color: rgb(255, 255, 255);
   }
-  ul.buttons section {
+  section {
     -moz-column-gap: 2%;
          column-gap: 2%;
   }
 }
-@media (width >= 600px) and (width > 670px) and (width >= 1000px) {
-  ul.buttons .item {
+@media (width >= 1000px) {
+  .item {
     padding: 30px;
     font-size: 18px;
   }

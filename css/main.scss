@@ -3,18 +3,20 @@
 
 
 html{
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-body{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0px;
-    background-color:rgb(15, 30, 128)
-    background-image url(../img/CRH.jpg);
-    background-size: cover;
-    }
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px;
+  background-color:rgb(15, 30, 128);
+  background-image: url("../img/CRH.jpg");
+  background-size: cover;
+}
 
 h1, h2, h3 {
   color: white;
@@ -50,6 +52,7 @@ h1, h2, h3 {
   padding: 0px;
   color: rgb(237, 20, 118);
 }
+
 section {
   background-color: white;
   padding-top: 40px;
@@ -72,14 +75,16 @@ section {
   margin: 0px;
   display: row;
   align-items: left;
-  align-content: left;}
+  align-content: left;
+}
 
 
 
 section {
   background-color: white;
   padding-top: 40px;
-  padding-bottom: 40px;}
+  padding-bottom: 40px;
+}
 
 .content {
   display: flex;
@@ -110,22 +115,22 @@ section {
   position: sticky bottom;
   font-size: 20px;
 
-    a{
-      background-color: #bb2f81;
-      color: rgb(255, 206, 225);
-      display: block;
-      padding: 5px;
-      text-align:center;
-      position: sticky;
-      align-items: bottom;
-      
-      &:hover,
-      &:focus {
-        background-color: rgb(255, 143, 218);
-        color: white;
-      }
+  a{
+    background-color: #bb2f81;
+    color: rgb(255, 206, 225);
+    display: block;
+    padding: 5px;
+    text-align:center;
+    position: sticky;
+    align-items: bottom;
+    
+    &:hover,
+    &:focus {
+      background-color: rgb(255, 143, 218);
+      color: white;
     }
   }
+}
 
 
 
@@ -165,7 +170,8 @@ ul.navigation {
     }
   }
 }
-ul.buttons{
+
+ul.buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,8 +180,9 @@ ul.buttons{
   padding: 0;
   color: white;
 
-  li{
-    a{
+  li {
+
+    a {
       background-color: rgb(128, 236, 255);
       color: black;
       display: block;
@@ -189,15 +196,17 @@ ul.buttons{
       }
     }
   }
+}
 
 /* Styles for screens above or equal to 600px wide */
 @media (width >= 600px) {
+  
   body {
     background-color: var(--primary-color);
     color: var(--off-white);
   }
 
-   .item {
+  .item {
     background: #e52f96;
     color: rgb(193, 24, 114);
     padding: 10px;
@@ -205,7 +214,6 @@ ul.buttons{
     max-width: 440px;
     margin: 5px;
   }
-  
 
   h1, h2, h3 {
     color: var(--white);
@@ -219,7 +227,7 @@ ul.buttons{
     box-sizing: inherit;
   }
 
-  body{
+  body {
     margin: 0;
   }
 
@@ -231,29 +239,32 @@ ul.buttons{
     gap: 5px;
     justify-content: center;
   }
+}
 
   
 
-  @media (width > 670px) {
-    h1{
-      font-size: clamp(36px, 5vw, 60px);
-    }
-    p{
-      color: rgb(255, 255, 255);
-    }
-    
-    section{
-      column-gap: 2%;
-    }
-    
+@media (width > 670px) {
 
-  @media (width >= 1000px){
-    .item {
-      padding: 30px;
-      font-size: 18px;
-     
-       }
-      }
-    }
-   }
+  h1 {
+    font-size: clamp(36px, 5vw, 60px);
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+  }
+  
+  section {
+    column-gap: 2%;
+  }
+}
+
+  
+
+@media (width >= 1000px) {
+
+  .item {
+    padding: 30px;
+    font-size: 18px;
+    
+  }
 }
