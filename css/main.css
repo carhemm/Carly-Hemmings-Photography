@@ -31,30 +31,21 @@ a:hover {
   color: rgb(189, 189, 225);
 }
 
-section {
-  background-color: white;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 h1, h2, h3 {
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  padding: 0px;
-  color: rgb(237, 20, 118);
-}
-
 section {
-  background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
 }
 
 .header {
@@ -62,7 +53,7 @@ section {
   color: rgb(255, 255, 255);
   display: justify-content;
   flex-direction: center;
-  background-color: rgb(15, 30, 128);
+  background-color: #6072ff;
   color: black;
 }
 
@@ -72,21 +63,6 @@ section {
   display: row;
   align-items: left;
   align-content: left;
-}
-
-section {
-  background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  padding: 0px;
-  color: rgb(237, 20, 118);
 }
 
 .header-p {
@@ -175,6 +151,40 @@ ul.buttons li a:hover, ul.buttons li a:focus {
   color: white;
 }
 
+/* Featured Section on Homepage Styles */
+.featured .content {
+  gap: 40px;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+.featured .category {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 40px;
+}
+.featured .category:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.featured .image {
+  flex-basis: 55%;
+  min-width: 400px;
+  flex-grow: 1;
+}
+.featured .info {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+.featured a {
+  display: block;
+}
+.featured img {
+  display: block;
+  width: 100%;
+}
+
 /* Styles for screens above or equal to 600px wide */
 @media (width >= 600px) {
   body {
@@ -202,7 +212,6 @@ ul.buttons li a:hover, ul.buttons li a:focus {
     margin: 0;
   }
   section {
-    background-color: pink;
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0;
