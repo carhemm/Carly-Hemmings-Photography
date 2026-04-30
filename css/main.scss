@@ -16,6 +16,12 @@ body {
   background-color:rgb(15, 30, 128);
   background-image: url("../img/CRH.jpg");
   background-size: cover;
+  min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1, h2, h3 {
@@ -108,14 +114,6 @@ section {
 
 /* reset and base style*/
 
-body{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .image-container {
     position:relative;
