@@ -60,7 +60,7 @@ section {
   display: justify-content;
   flex-direction: center;
   background-color: #6072ff;
-  color: black;
+  color: gba(9, 24, 133, 0.6);
 }
 
 .item-sub {
@@ -116,7 +116,7 @@ section {
     overflow: hidden;
     border-radius: 10px;
     border:2px solid #8faefb;
-    box-shadow: 10 10px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 10 10px 10px rgba(9, 24, 133, 0.6);
     text-align: center;
 }
 
@@ -243,7 +243,7 @@ ul.buttons {
 
     a {
       background-color: rgb(128, 236, 255);
-      color: black;
+      color: rgba(9, 24, 133, 0.6);
       display: block;
       padding: 10px;
       text-align:center;
