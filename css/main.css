@@ -17,8 +17,8 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3 {
-  color: white;
+h1, h2, h3, p {
+  color: rgb(7, 5, 111);
   position: center;
 }
 
@@ -32,8 +32,8 @@ a:hover {
   color: rgb(189, 189, 225);
 }
 
-h1, h2, h3 {
-  color: rgb(255, 255, 255);
+h1, h2, h3, p {
+  color: rgb(7, 5, 111);
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ section .content {
   display: justify-content;
   flex-direction: center;
   background-color: #6072ff;
-  color: rgba(9, 24, 133, 0.6);
+  color: gba(9, 24, 133, 0.6);
 }
 
 .item-sub {
@@ -125,7 +125,7 @@ section .content {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(0, 191, 255, 0.5), rgba(0, 191, 255, 0.5));
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 191, 255, 0.5));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +177,7 @@ section .content {
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(0, 191, 255, 0.5) 0%, rgba(0, 191, 255, 0.5) 100%);
+  background: linear-gradient(120deg, rgba(179, 194, 255, 0.5) 0%, rgba(0, 191, 255, 0.5) 100%);
   transform: skewX(-25deg);
   transition: all 0.6s ease;
 }
@@ -309,9 +309,16 @@ ul.buttons li a:hover, ul.buttons li a:focus {
 @media (width > 670px) {
   h1 {
     font-size: clamp(36px, 5vw, 60px);
+    color: rgb(13, 36, 128);
   }
-  p {
-    color: rgb(255, 255, 255);
+  h2, p {
+    color: rgb(214, 218, 239);
+  }
+  h3 {
+    color: rgb(6, 18, 99);
+  }
+  .info p {
+    color: rgb(61, 170, 200);
   }
   section {
     -moz-column-gap: 2%;
