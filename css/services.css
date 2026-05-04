@@ -31,10 +31,10 @@ a {
 
 a:hover {
   background-color: rgb(116, 116, 246);
-  color: rgb(189, 189, 225);
+  color: rgb(0, 0, 0);
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
   color: rgb(7, 5, 111);
  text-align: center;
 }
@@ -75,6 +75,13 @@ section {
 .header-p {
   background-color: rgb(237, 20, 118);
   color:rgb(237, 20, 118);
+}
+
+.services-p {
+  color: rgb(0, 0, 0);
+  display: justify-content; 
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons{
@@ -318,6 +325,9 @@ ul.buttons {
   h1, h2, h3 {
     color: var(--white);
   }  
+  p{
+    color: rgb(0, 0, 0);
+  }
   
   html{
     box-sizing: border-box;
@@ -349,16 +359,19 @@ ul.buttons {
     color: rgb(13, 36, 128);
   }
 
- h2, p {
-    color: rgb(214, 218, 239);
+ h2{
+    color: rgb(0, 0, 0);
   }
 
   h3 {
     color: rgb(6, 18, 99);
   }
+  p{
+    color: rgb(0, 0, 0);
+  }
   
-  .info p{
-    color: rgb(61, 170, 200);
+  .info {
+    color: rgb(0, 0, 0);
   }
   
   section {
@@ -374,5 +387,15 @@ ul.buttons {
     padding: 30px;
     font-size: 18px;
     
+  }
+  p{
+    color: rgb(0, 0, 0);
+  }
+
+  @media (width >= 1400px) {
+    p {
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
   }
 }
