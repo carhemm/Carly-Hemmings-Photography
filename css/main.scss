@@ -13,8 +13,9 @@ html{
 body {
   font-family: 'Times New Roman', Times, serif;
   margin: 0px;
-  background-color:rgb(15, 30, 128);
+  background-color: #616A9E;
   background-image: url("../img/CRH.jpg");
+  background-blend-mode: screen;
   background-size: cover;
   min-height: 100vh;
 }
@@ -298,15 +299,51 @@ ul.buttons {
     display: block;
     width: 100%;
   }
+
+  &.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (width >= 670px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .category {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .image-container {
+      flex-basis: auto;
+      flex-grow: 0;
+      min-width: 250px;
+    }
+  }
+
+  &.portrait-images {
+
+    img {
+      aspect-ratio: 3/4;
+    }
+  }
+
+  &.landscape-images {
+    
+    img {
+      aspect-ratio: 16/9;
+    }
+  }
+
+    &.square-images {
+    
+    img {
+      aspect-ratio: 1/1;
+    }
+  }
 }
 
 /* Styles for screens above or equal to 600px wide */
 @media (width >= 600px) {
-
-  body {
-    background-color: var(--primary-color);
-    color: var(--off-white);
-  }
 
   .item {
     background: #e52f96;
@@ -327,10 +364,6 @@ ul.buttons {
   
   *, *:before , *:after {
     box-sizing: inherit;
-  }
-
-  body {
-    margin: 0;
   }
 
   section { 
