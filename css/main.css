@@ -284,6 +284,7 @@ ul.buttons li a:hover, ul.buttons li a:focus {
 .featured.col-3 .category {
   flex-direction: column;
   flex-wrap: nowrap;
+  row-gap: 0.05%;
 }
 .featured.col-3 .image-container {
   flex-basis: auto;
