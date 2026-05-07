@@ -72,6 +72,34 @@ section .content {
   color: rgb(237, 20, 118);
 }
 
+.hyperlinks {
+  text-align: center;
+  color: rgb(6, 18, 99);
+  text-decoration: underline;
+  text-wrap: wrap;
+  justify-content: center;
+  font-size: 24px;
+  display: justify-content;
+}
+
+ul.hyperlinks {
+  list-style: none;
+  gap: 50px;
+}
+ul.hyperlinks li a {
+  background-color: #6072ff;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 30px;
+  border: 60px;
+  text-align: center;
+  line-height: 70px;
+}
+ul.hyperlinks li a:hover, ul.hyperlinks li a:focus {
+  background-color: rgb(15, 30, 128);
+  color: white;
+}
+
 .buttons {
   justify-content: left;
   margin: 20px;
