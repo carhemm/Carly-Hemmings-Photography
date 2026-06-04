@@ -109,6 +109,15 @@ section ul.navigation-footer li a:hover, section ul.navigation-footer li a:focus
   color: white;
 }
 
+.Hyperlink-github {
+  text-align: center;
+  color: rgb(94, 111, 227);
+  text-decoration: underline;
+  text-wrap: wrap;
+  justify-content: center;
+  font-size: 24px;
+}
+
 .item-sub {
   color: rgb(255, 255, 255);
   margin: 0px;
@@ -405,8 +414,25 @@ ul.buttons li a:hover, ul.buttons li a:focus {
     gap: 5px;
     justify-content: center;
   }
+  .video-container {
+    display: block;
+    position: relative;
+    width: 134%;
+    height: 144px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #8faefb;
+    box-shadow: 10 10px 10px rgba(9, 24, 133, 0.6);
+  }
+  .video-container video {
+    width: 99%;
+    height: 97%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.5s ease;
+  }
 }
-@media (width > 670px) {
+@media (width >= 600px) and (width > 670px) {
   h1 {
     font-size: clamp(36px, 5vw, 60px);
     color: rgb(13, 36, 128);
@@ -438,10 +464,44 @@ ul.buttons li a:hover, ul.buttons li a:focus {
     padding-top: 300px 0;
     padding-bottom: 0px;
   }
+  .video-container {
+    display: block;
+    position: relative;
+    width: 134%;
+    height: 144px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #8faefb;
+    box-shadow: 10 10px 10px rgba(9, 24, 133, 0.6);
+  }
+  .video-container video {
+    width: 99%;
+    height: 97%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.5s ease;
+  }
 }
 @media (width >= 1000px) {
   .item {
     padding: 30px;
     font-size: 18px;
+  }
+  .video-container {
+    display: block;
+    position: relative;
+    width: 234%;
+    height: 244px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #8faefb;
+    box-shadow: 10 10px 10px rgba(9, 24, 133, 0.6);
+  }
+  .video-container video {
+    width: 99%;
+    height: 97%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.5s ease;
   }
 }/*# sourceMappingURL=main.css.map */
