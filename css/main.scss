@@ -65,7 +65,18 @@ section {
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 0.05%;
+  width: 50%;
+  height: 50%;
+}
 
+.category-aboutme h4{
+  color: rgb(18, 12, 137);
+  justify-content: right;
+  align-items: right;
+  text-align: center;
+  position: right;
+  display: flex right;
+  flex-direction: row;
 }
 .socials {
   display: flex;
@@ -76,6 +87,7 @@ section {
   padding: 0px;
   width: 5px;
   height: 5px;
+  image-orientation: from-image;
 }
 .socials img{
   width: 50;
