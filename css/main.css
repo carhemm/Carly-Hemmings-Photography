@@ -66,6 +66,28 @@ section {
   row-gap: 0.05%;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  justify-content: justify-content;
+  gap: 10px;
+  padding: 0px;
+  width: 5px;
+  height: 5px;
+}
+
+.socials img {
+  width: 50;
+  height: 50px;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: start;
+  padding: 0px;
+}
+
 .header {
   padding: 0px;
   color: rgb(255, 255, 255);
@@ -146,6 +168,34 @@ section ul.navigation-footer li a:hover, section ul.navigation-footer li a:focus
   justify-content: center;
   font-size: 24px;
   display: justify-content;
+}
+
+.navigation-footer {
+  background-color: #6072ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  z-index: 100;
+}
+.navigation-footer li a {
+  background-color: #6072ff;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.navigation-footer li a:hover, .navigation-footer li a:focus {
+  background-color: rgb(15, 30, 128);
+  color: white;
 }
 
 ul.hyperlinks {
