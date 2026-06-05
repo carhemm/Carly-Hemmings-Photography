@@ -51,13 +51,20 @@ section {
     justify-content: center;
     padding: 0px;
   }
-.info h4{
+.info{
   color: rgb(7, 5, 111);
   padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  display: justify-content;
+}
+
+.category-aboutme{
+ flex-direction: column;
+      flex-wrap: nowrap;
+       row-gap: 0.05%;
 }
 
 
@@ -488,7 +495,7 @@ ul.buttons {
   overflow: hidden;
   border-radius: 10px;
   border:2px solid #8faefb;
-  box-shadow: 10 10px 10px rgba(9, 24, 133, 0.6);
+  box-shadow: 10 10px 10px rgba(90, 104, 214, 0.6);
 }
 .video-container video {
     width: 99%;
@@ -523,7 +530,7 @@ ul.buttons {
   
   .info h4{
     color: rgb(255, 255, 255);
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     text-align: center;
   }
