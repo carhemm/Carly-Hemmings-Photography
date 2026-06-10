@@ -75,12 +75,17 @@ section {
   align-items: right;
   text-align: center;
   position: right;
-  display: flex right;
-  flex-direction: row;
+  display: fle;
+  flex-direction: column;
 }
-.socials {
+ul.socials {
   display: flex;
   flex-direction: column;
+}
+
+ul.socials {
+  display: flex;
+  flex-direction: row;
   min-height: 10vh;
   justify-content: justify-content;
   gap: 10px;
@@ -88,8 +93,9 @@ section {
   width: 5px;
   height: 5px;
   image-orientation: from-image;
+  list-style-type: none;
 }
-.socials img{
+ul.socials img{
   width: 50;
   height: 50px;
   position: sticky;
@@ -98,6 +104,7 @@ section {
   align-items: left;
   justify-content: start;
   padding: 0px;
+ list-style-type: none;
 }
 
 
